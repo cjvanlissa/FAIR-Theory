@@ -1,0 +1,31 @@
+---
+title: "Formal Methods in Lifespan Psychology"
+subtitle: "An amazing team of nerds"
+author: "Aaron Peikert"
+institute: "Max Planck Institute for Human Development"
+format:
+  revealjs: 
+    theme: [default, mpi.scss]
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: decoded.svg
+      data-background-size: contain 
+      data-background-opacity: ".1"
+    include-in-header:
+      - text: |
+         <link rel = "shortcut icon" href = "https://www.mpg.de/favicon.ico" />
+    footer: "[Edit](https://github.com/aaronpeikert/repro-talk/edit/main/presentation.qmd)"
+    html-math-method:
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"
+aliases:
+  - index.html
+---
+
+# Quarto Slides
+
+## New generation of RMarkdown
+
+* build and updated via GitHub actions
+* many cool features
+* [learn more](https://quarto.org/docs/presentations/revealjs/)
