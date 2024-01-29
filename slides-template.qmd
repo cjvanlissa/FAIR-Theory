@@ -1,8 +1,23 @@
 ---
-title: "Formal Methods in Lifespan Psychology"
-subtitle: "An amazing team of nerds"
-author: "Aaron Peikert"
-institute: "Max Planck Institute for Human Development"
+title: "To be FAIR: Theory Development Needs an Update"
+subtitle: "LIP Internal Colloqium"
+author:
+  - name: Aaron Peikert
+    affiliation:
+      - id: mpi
+        name: "Max Planck Institute for Human Development"
+  - name: Andreas M. Brandmaier
+    affiliation:
+      - name: MSB Medical School Berlin
+  - name: Maximilian S. Ernst
+    affiliation:
+      - ref: mpi
+  - name: Felix Schönbrodt
+    affiliation:
+      - name: Ludwig-Maximilians-Universität München
+  - name: Caspar van Lissa
+    affiliation:
+      - name: "Tilburg University"
 format:
   revealjs: 
     theme: [default, mpi.scss]
@@ -14,18 +29,323 @@ format:
     include-in-header:
       - text: |
          <link rel = "shortcut icon" href = "https://www.mpg.de/favicon.ico" />
+         <script>
+          Reveal.addEventListener('stats', function() {
+          // Called each time the slide with the "stats" state is made visible
+            document.getElementById('deductionAnimation').beginElement();
+          });
+         </script>
     footer: "[Edit](https://github.com/aaronpeikert/repro-talk/edit/main/presentation.qmd)"
     html-math-method:
       method: mathjax
       url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"
+    template-partials:
+      - title-slide.html
+    mermaid-format: js
+    hash-type: "number"
+
 aliases:
   - index.html
+revealjs-plugins:
+  - attribution
 ---
 
-# Quarto Slides
+# FAIR [Theory]{data-id="theory"} {.center auto-animate="true"}
 
-## New generation of RMarkdown
+# FAIR [Theory]{.highlight data-id="theory"} {.center auto-animate="true"}
 
-* build and updated via GitHub actions
-* many cool features
-* [learn more](https://quarto.org/docs/presentations/revealjs/)
+## [Theory]{data-id="theory"} {.center .nostretch auto-animate="true"}
+
+composition of hypotheses about the world
+
+## {.center auto-animate="true"}
+
+### Deduction {.invisible}
+
+#### Hypothesis
+
+#### ↓ 
+
+#### Data
+
+## {.center auto-animate="true"}
+
+### Deduction {.highlight}
+
+#### Hypothesis {.lowlight}
+
+#### ↓ {.lowlight}
+
+#### Data {.lowlight}
+
+## Where do hypotheses come from? {.center}
+
+![](https://imgs.xkcd.com/comics/hypothesis_generation.png)
+
+
+::: {.center .small}
+
+Frazzled scientists are requesting that everyone please stop generating hypotheses for a little bit while they work through the backlog.
+
+:::
+
+::: attribution
+Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/).
+:::
+
+## {.center auto-animate="true"}
+
+### Induction {.invisible}
+
+#### Hypothesis
+
+#### ↑
+
+#### Data
+
+## {.center auto-animate="true"}
+
+### Induction {.highlight}
+
+#### Hypothesis {.lowlight data-id="box1"}
+
+#### ↑ {.lowlight data-id="box2"}
+
+#### Data {.lowlight data-id="box3"}
+
+## {.center auto-animate="true"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Deduction {.highlight data-id="deduction"}
+
+#### Hypothesis {.lowlight}
+
+#### ↓ {.lowlight}
+
+#### Data {.lowlight}
+
+:::
+
+::: {.column width="50%"}
+
+### Induction {.highlight data-id="induction"}
+
+#### Hypothesis {.lowlight data-id="box1"}
+
+#### ↑ {.lowlight data-id="box2"}
+
+#### Data {.lowlight data-id="box3"}
+
+:::
+
+::::
+
+## {.center auto-animate="true"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+### Deduction {.highlight data-id="deduction"}
+
+:::
+
+::: {.column width="50%"}
+
+### Induction {.highlight data-id="induction"}
+
+:::
+
+::::
+
+## {.center}
+
+### The Empirical Cycle[\nbsp?]{.invisible} {.highlight}
+
+![](images/empierical-cylcle.svg)
+
+## {.center}
+
+### The Empirical Cycle ? {.highlight}
+
+![](images/hamsterwheel.svg)
+
+::: attribution
+
+Generated with OpenAI DALL-E. Licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+:::
+
+## {.center}
+
+### We need a vehicle 
+
+### for
+
+### cumulative science
+
+## Present {.center}
+
+![](images/shitty-car.png)
+
+::: attribution
+
+Generated with OpenAI DALL-E. Licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+:::
+
+## Future {.center}
+
+![](images/cool-car.png)
+
+::: attribution
+
+Generated with OpenAI DALL-E. Licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+:::
+
+# [FAIR]{data-id="fair"} Theory {.center auto-animate="true"}
+
+# [FAIR]{.highlight data-id="fair"} Theory {.center auto-animate="true"}
+
+## [FAIR]{data-id="fair"} {.center .nostretch auto-animate="true"}
+
+[**F**]{.highlight}indability, [**A**]{.highlight}ccessibility, [**I**]{.highlight}nteroperability, and [**R**]{.highlight}euse of
+
+[**digital assets**]{.highlight}
+
+## {.center auto-animate="true"}
+
+### [Formalization →]{.invisible data-id="form"}[Digitalization]{.highlight data-id="digi"}[→ FAIRification]{.invisible data-id="fair"}
+
+## {.center auto-animate="true"}
+
+### [Formalization →]{.highlight data-id="form"}[Digitalization]{data-id="digi"}[→ FAIRification]{.invisible data-id="fair"}
+
+## {.center auto-animate="true"}
+
+### [Formalization →]{data-id="form"}[Digitalization]{data-id="digi"}[→ FAIRification]{.highlight data-id="fair"}
+
+## {.center auto-animate="true"}
+
+### Formalization
+
+> „Crucially, scientific models are expressed in unambiguous language such that **anyone can interpret the model and its claims about the world**. Contrary to mental models (which live in a person’s mind), scientific models are **transparent and public** (that is, external) representations.”  
+
+::: {style="text-align: right;"}
+--- Iris van Rooij
+:::
+
+::: attribution
+[van Rooij, I. Psychological models and their distractors. Nat Rev Psychol 1, 127–128 (2022).](https://doi.org/10.1038/s44159-022-00031-5)
+:::
+
+## {.center auto-animate="true"}
+
+### Formalization
+
+We are agnostic.
+
+## {.center auto-animate="true"}
+
+### Formalization
+ 
+::: {.incremental}
+ - Formulas
+ - Operational Definitions
+ - Nomological Networks
+ - Computer Programs
+ - Graphical Models
+ - Axiomatic Systems
+ - Algorithmic Descriptions
+ - Decision Trees and Flowcharts
+ - Statistical Models
+ - Meta-Theoretical Frameworks
+:::
+
+## {.center auto-animate="true"}
+
+### Formalization
+ 
+Let's discuss later!
+
+## {.center}
+
+### [Formalization →]{data-id="form"}[Digitalization]{data-id="digi"}[→ FAIRification]{.highlight data-id="fair"}
+
+## [F]{.highlight}indable {.center auto-animate="true"}
+
+::: {.incremental}
+- universally unique persistent identifiers, e.g., DOI
+- metadata describing the theory
+- indexed and searchable
+:::
+
+## [A]{.highlight}ccesable {.center auto-animate="true"}
+
+::: {.incremental}
+- everyone knows how to access the theory
+- it is clear what the theory constitutes (i.e., it is seperate from a paper)
+:::
+
+## [I]{.highlight}nteroparable {.center auto-animate="true"}
+
+::: {.incremental}
+- theories use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+- theories use vocabularies that follow FAIR principles
+- theories include qualified references to other theories
+:::
+
+## [R]{.highlight}eusable {.center auto-animate="true"}
+
+::: {.incremental}
+- theories are released with a clear and accessible usage license
+- theories meet domain-relevant community standards
+- theories are associated with detailed provenance
+:::
+
+## {.center}
+
+- theories are associated with [detailed provenance]{.highlight}
+
+## Version control for Theories {.center}
+
+## Semantic Versioning for Theories {.center}
+
+## semver {.center}
+
+::: {.small style="text-align: left;"}
+Version numbers have three numbers: MAJOR.MINOR.PATCH.
+
+Increment the:
+
+- MAJOR version when you make incompatible API changes
+- MINOR version when you add functionality in a backward compatible manner
+- PATCH version when you make backward compatible bug fixes
+:::
+
+## Patch, Minor, Major changes
+
+::: {.incremental .small}
+
+patch
+: The predictions your theory makes do not change, instead you have clarified things, defined terminology, fixed typos, added references etc.
+
+minor
+: The predictions your theory makes have expanded but previous predictions are substantively compatible, i.e. the theory makes the same prediction as older versions for the same settings.
+
+major
+: Evidence that would have confirmed or falsified the previous version does differently affect this version. You changed core tenets of the definition of constructs or their operationalization, changed the functional relationship between two variables, changed the type of a relation (causation to correlation) or the timescale of a process, etc.
+
+:::
+
+## Contentios Issues
+
+* Does theory development need more structure?
+* How can we meet the challange of formalizing theories?
+* How do theories relate to empierical tests? Do we test EESR v1.2.3?
+* Who owns a theory? Who is allowed to propose changes?
+* When should we rename a theory?
