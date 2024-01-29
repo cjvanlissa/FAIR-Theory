@@ -1,5 +1,5 @@
 project:
   type: website
-  title: "slides-template"
+  title: "FAIR Theory"
   pre-render: minerva/decode.lua
   output-dir: _publish/
