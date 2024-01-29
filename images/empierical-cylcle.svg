@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 851.98 705.31" style="enable-background:new 0 0 851.98 705.31;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EF7C00;}
+	.st1{font-family:'LibertinusSerifDisplay-Regular';}
+	.st2{font-size:72px;}
+	.st3{display:none;fill:none;stroke:#EF7C00;stroke-width:10;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#EF7C00;stroke-width:6;stroke-miterlimit:10;}
+	.st5{fill:none;}
+</style>
+<g id="Ebene_1">
+	<text transform="matrix(1 0 0 1 627.5921 370.4912)" class="st0 st1 st2">Data</text>
+	<circle class="st3" cx="430.81" cy="352.66" r="401.74"/>
+	<g>
+		<path class="st4" d="M696.46,275.93C660.5,149.68,538.94,62.67,403.37,74.78S163.58,194.05,150.56,324.67"/>
+		<path class="st4" d="M159.91,429.38C195.87,555.63,317.43,642.64,453,630.53c135.57-12.1,239.79-119.27,252.81-249.89"/>
+		<polygon class="st4" points="155.96,385.13 134.36,431.66 185.46,427.1 		"/>
+		<polygon class="st4" points="700.41,320.18 722.01,273.65 670.91,278.21 		"/>
+	</g>
+	<path id="SVGID_x5F_1_x5F_" class="st5" d="M711.84,366.66c0,154.08-124.9,278.98-278.98,278.98s-278.98-124.9-278.98-278.98"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="34.668%">
+<tspan  class="st0 st1 st2">Induction</tspan>	</textPath>
+</text>
+	<path id="SVGID_x5F_00000049222216124078006830000014613203269462063767_x5F_" class="st5" d="M153.88,338.65
+		c0-154.08,124.9-278.98,278.98-278.98s278.98,124.9,278.98,278.98"/>
+	<text>	<textPath  xlink:href="#SVGID_x5F_00000049222216124078006830000014613203269462063767_x5F_" startOffset="34.668%">
+<tspan  class="st0 st1 st2">Deduction</tspan>	</textPath>
+</text>
+	<text transform="matrix(1 0 0 1 -0.6117 370.491)" class="st0 st1 st2">Hypothesis</text>
+</g>
+<g id="Ebene_2">
+</g>
+</svg>
