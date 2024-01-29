@@ -53,8 +53,16 @@ $mermaid-label-fg-color: $text-muted;
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .highlight {
   color: #ef7c00 !important;
+}
+
+.lowlight {
+  color: mix($body-color, $body-bg, 70%) !important;
 }
 
 .tinitiny {
