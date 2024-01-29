@@ -35,7 +35,7 @@ format:
             document.getElementById('deductionAnimation').beginElement();
           });
          </script>
-    footer: "[Edit](https://github.com/aaronpeikert/repro-talk/edit/main/presentation.qmd)"
+    footer: "[Edit](https://github.com/aaronpeikert/FAIR-Theory/edit/main/presentation.qmd)"
     html-math-method:
       method: mathjax
       url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"
