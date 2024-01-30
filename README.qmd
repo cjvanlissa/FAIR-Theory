@@ -1,0 +1,11 @@
+---
+title: "To be FAIR: Theory Development Needs an Update"
+format: md
+toc: true
+keep-md: true
+date-modified: "`r Sys.Date()`"
+keywords: ["FAIR", "theory", "software engineering", "open science"]
+---
+
+{{< include abstract.md >}}
+

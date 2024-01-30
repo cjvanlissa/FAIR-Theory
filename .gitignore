@@ -22,3 +22,4 @@ decoded.svg
 *.html
 .DS_Store
 _publish/
+README.commonmark.md
