@@ -165,7 +165,7 @@ Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://cr
 
 ### The Empirical Cycle[\nbsp?]{.invisible} {.highlight}
 
-![](images/empierical-cylcle.svg)
+![](images/empirical-cycle.svg)
 
 ## {.center}
 
@@ -288,13 +288,13 @@ Let's discuss later!
 
 ::: {.incremental}
 - everyone knows how to access the theory
-- it is clear what the theory constitutes (i.e., it is seperate from a paper)
+- it is clear what the theory constitutes (i.e., it is separate from a paper)
 :::
 
 ## [I]{.highlight}nteroparable {.center auto-animate="true"}
 
 ::: {.incremental}
-- theories use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+- theories use a formal, accessibleessible, shared, and broadly applicable language for knowledge representation.
 - theories use vocabularies that follow FAIR principles
 - theories include qualified references to other theories
 :::
@@ -302,7 +302,7 @@ Let's discuss later!
 ## [R]{.highlight}eusable {.center auto-animate="true"}
 
 ::: {.incremental}
-- theories are released with a clear and accessible usage license
+- theories are released with a clear and accessibleessible usage license
 - theories meet domain-relevant community standards
 - theories are associated with detailed provenance
 :::
@@ -342,10 +342,10 @@ major
 
 :::
 
-## Contentios Issues
+## Contentious Issues
 
 * Does theory development need more structure?
-* How can we meet the challange of formalizing theories?
-* How do theories relate to empierical tests? Do we test EESR v1.2.3?
+* How can we meet the challenge of formalizing theories?
+* How do theories relate to empirical tests? Do we test EESR v1.2.3?
 * Who owns a theory? Who is allowed to propose changes?
 * When should we rename a theory?
