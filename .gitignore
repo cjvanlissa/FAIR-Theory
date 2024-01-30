@@ -22,4 +22,5 @@ decoded.svg
 *.html
 .DS_Store
 _publish/
+site_libs/
 README.commonmark.md

@@ -48,6 +48,7 @@ aliases:
   - index.html
 revealjs-plugins:
   - attribution
+google-scholar: true
 ---
 
 # FAIR [Theory]{data-id="theory"} {.center auto-animate="true"}

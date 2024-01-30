@@ -1,5 +1,11 @@
 project:
   type: website
   title: "FAIR Theory"
+  render: 
+    - presentation.qmd
+    - README.qmd
   pre-render: minerva/decode.lua
+  post-render:
+    - cp -f _publish/README.md ./README.md
   output-dir: _publish/
+

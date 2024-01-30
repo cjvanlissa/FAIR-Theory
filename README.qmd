@@ -5,6 +5,7 @@ toc: true
 keep-md: true
 date-modified: "`r Sys.Date()`"
 keywords: ["FAIR", "theory", "software engineering", "open science"]
+appendix-cite-as: display
 ---
 
 {{< include abstract.md >}}
