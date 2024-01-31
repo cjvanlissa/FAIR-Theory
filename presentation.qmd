@@ -21,6 +21,7 @@ author:
 format:
   revealjs: 
     theme: [default, mpi.scss]
+    css: fonts.css
     slide-number: c/t
     title-slide-attributes:
       data-background-image: decoded.svg
