@@ -286,17 +286,17 @@ Let's discuss later!
 - indexed and searchable
 :::
 
-## [A]{.highlight}ccesable {.center auto-animate="true"}
+## [A]{.highlight}ccessible {.center auto-animate="true"}
 
 ::: {.incremental}
 - everyone knows how to access the theory
 - it is clear what the theory constitutes (i.e., it is separate from a paper)
 :::
 
-## [I]{.highlight}nteroparable {.center auto-animate="true"}
+## [I]{.highlight}nteroperable {.center auto-animate="true"}
 
 ::: {.incremental}
-- theories use a formal, accessibleessible, shared, and broadly applicable language for knowledge representation.
+- theories use a formal, accessible, shared, and broadly applicable language for knowledge representation.
 - theories use vocabularies that follow FAIR principles
 - theories include qualified references to other theories
 :::
@@ -304,7 +304,7 @@ Let's discuss later!
 ## [R]{.highlight}eusable {.center auto-animate="true"}
 
 ::: {.incremental}
-- theories are released with a clear and accessibleessible usage license
+- theories are released with a clear and accessible usage license
 - theories meet domain-relevant community standards
 - theories are associated with detailed provenance
 :::
@@ -325,8 +325,8 @@ Version numbers have three numbers: MAJOR.MINOR.PATCH.
 Increment the:
 
 - MAJOR version when you make incompatible API changes
-- MINOR version when you add functionality in a backward compatible manner
-- PATCH version when you make backward compatible bug fixes
+- MINOR version when you add functionality in a backward-compatible manner
+- PATCH version when you make backward-compatible bug fixes
 :::
 
 ## Patch, Minor, Major changes
