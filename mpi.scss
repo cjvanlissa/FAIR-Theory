@@ -1,4 +1,4 @@
-/*-- scss:dark-version --*/
+/*-- scss:defaults --*/
 
 // Importing fonts
 @import url('https://fontlibrary.org//face/libertinus-sans');
@@ -49,7 +49,7 @@ $mermaid-label-fg-color: $text-muted;
 
 #title-slide {
   h1 {
-    font-size: 2em; /* Adjust the size as needed */
+    font-size: 1em; /* Adjust the size as needed */
   }
 }
 
