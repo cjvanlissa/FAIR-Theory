@@ -1,6 +1,6 @@
 ---
 title: "To be FAIR: Theory Development Needs an Update"
-subtitle: "LIP Internal Colloqium"
+subtitle: "DGPS 2024 Vienna"
 author:
   - name: Aaron Peikert
     affiliation:
@@ -43,7 +43,9 @@ format:
       - title-slide.html
     mermaid-format: js
     hash-type: "number"
-
+bibliography: references.bib
+nocite: |
+  @item1
 aliases:
   - index.html
 revealjs-plugins:
@@ -51,33 +53,55 @@ revealjs-plugins:
 google-scholar: true
 ---
 
+> "Theories are nets cast to catch what we call ‘the world’: to rationalize, to explain, and to master it.
+> We endeavor to make the mesh ever finer and finer."
+
+::: {style="text-align: right;"}
+--- @feyerabend1970
+:::
+
 # FAIR [Theory]{data-id="theory"} {.center auto-animate="true"}
 
 # FAIR [Theory]{.highlight data-id="theory"} {.center auto-animate="true"}
 
 ## [Theory]{data-id="theory"} {.center .nostretch auto-animate="true"}
 
-composition of hypotheses about the world
+Asking a scientist what a theory is, is a bit like asking a fish about water.
 
-## {.center auto-animate="true"}
+## Functionality {.center}
 
-### Deduction {.invisible}
+## {.center}
 
-#### Hypothesis
+Predictive 
+: Theories provide predictions that can be tested and refined (Popper, Hempel, van Fraassen).
 
-#### ↓ 
+## {.center}
 
-#### Data
+Explanatory 
+: Theories offer explanations for phenomena, helping to make sense of the world (Hempel, Cartwright, Bohm).
 
-## {.center auto-animate="true"}
+## {.center}
 
-### Deduction {.highlight}
+Guiding Research 
+: Theories guide scientific research by setting the agenda for normal science or research programs (Kuhn, Lakatos).
 
-#### Hypothesis {.lowlight}
+## {.center}
 
-#### ↓ {.lowlight}
+Organizing Knowledge
+: Theories organize and integrate knowledge within a broader conceptual framework (Quine, Putnam).
 
-#### Data {.lowlight}
+## {.center}
+
+Practical Utility
+: Theories serve as tools with practical utility in various contexts, depending on the needs of the scientific endeavor (Feyerabend, van Fraassen).
+
+## {.center}
+
+> Scientific theory is one of humankind’s most powerful inventions.
+
+--- @Borsboom2021
+
+# How are we doing?
 
 ## Where do hypotheses come from? {.center}
 
@@ -94,119 +118,45 @@ Frazzled scientists are requesting that everyone please stop generating hypothes
 Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/).
 :::
 
-## {.center auto-animate="true"}
 
-### Induction {.invisible}
+## {.incremental}
 
-#### Hypothesis
+* 89.6% of published studies tests hypotheses [@kuhbergerPublicationBiasPsychology2014].
+* only 15% of deductive studies even reference specific theories [@mcphetresDecadeTheoryReflected2021].
+* a theory crisis has been proclaimed by @scheelWhyHypothesisTesters2021
+* "Theories are rarely developed in a way that indicates an accumulation of knowledge." --- @robinaughInvisibleHandsFine2021
 
-#### ↑
+## {.incremental}
 
-#### Data
+* "I argue that most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong." --- @scheelWhyMostPsychological2022
+* "Nevertheless, the picture painted by Meehl (1978) more than 40 years ago was a bleak one, and we believe this portrait depicts much of the modern psychological landscape." --- @Proulx2021
 
-## {.center auto-animate="true"}
+## Who is to blame? {.center}
 
-### Induction {.highlight}
+Researchers must develop better, harder, faster, stronger theories by really trying their best.
 
-#### Hypothesis {.lowlight data-id="box1"}
-
-#### ↑ {.lowlight data-id="box2"}
-
-#### Data {.lowlight data-id="box3"}
-
-## {.center auto-animate="true"}
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-### Deduction {.highlight data-id="deduction"}
-
-#### Hypothesis {.lowlight}
-
-#### ↓ {.lowlight}
-
-#### Data {.lowlight}
-
-:::
-
-::: {.column width="50%"}
-
-### Induction {.highlight data-id="induction"}
-
-#### Hypothesis {.lowlight data-id="box1"}
-
-#### ↑ {.lowlight data-id="box2"}
-
-#### Data {.lowlight data-id="box3"}
-
-:::
-
-::::
-
-## {.center auto-animate="true"}
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-### Deduction {.highlight data-id="deduction"}
-
-:::
-
-::: {.column width="50%"}
-
-### Induction {.highlight data-id="induction"}
-
-:::
-
-::::
+`</ironie off>`
 
 ## {.center}
 
-### The Empirical Cycle[\nbsp?]{.invisible} {.highlight}
+[We need better [tools]{.highlight}.]{.r-fit-text}
 
-![](images/empirical-cycle.svg)
+##
 
-## {.center}
+### Open Science is a success story of better tooling
 
-### The Empirical Cycle ? {.highlight}
+::: {.incremental}
 
-![](images/hamsterwheel.svg)
-
-::: attribution
-
-Generated with OpenAI DALL-E. Licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
-
-:::
-
-## {.center}
-
-### We need a vehicle 
-
-### for
-
-### cumulative science
-
-## Present {.center}
-
-![](images/shitty-car.png)
-
-::: attribution
-
-Generated with OpenAI DALL-E. Licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+* Open Data is enabled by research data repositories
+* Open Code is driven by widespread availibility of open source software
+* Open Access is only thinkable because of extensive infrastructure
+* Preregistration is becoming popular(-ish) because of tutorials and plattforms
 
 :::
 
-## Future {.center}
+##
 
-![](images/cool-car.png)
-
-::: attribution
-
-Generated with OpenAI DALL-E. Licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
-
-:::
+[Theorizing in the 21th century]{.r-fit-text}
 
 # [FAIR]{data-id="fair"} Theory {.center auto-animate="true"}
 
@@ -237,18 +187,18 @@ Generated with OpenAI DALL-E. Licensed under [CC0](https://creativecommons.org/p
 > „Crucially, scientific models are expressed in unambiguous language such that **anyone can interpret the model and its claims about the world**. Contrary to mental models (which live in a person’s mind), scientific models are **transparent and public** (that is, external) representations.”  
 
 ::: {style="text-align: right;"}
---- Iris van Rooij
-:::
-
-::: attribution
-[van Rooij, I. Psychological models and their distractors. Nat Rev Psychol 1, 127–128 (2022).](https://doi.org/10.1038/s44159-022-00031-5)
+--- @vanRooij2022
 :::
 
 ## {.center auto-animate="true"}
 
 ### Formalization
 
-We are agnostic.
+> The only principle that does not inhibit progress is: anything goes.
+
+::: {style="text-align: right;"}
+--- @feyerabend1970
+:::
 
 ## {.center auto-animate="true"}
 
@@ -264,14 +214,7 @@ We are agnostic.
  - Algorithmic Descriptions
  - Decision Trees and Flowcharts
  - Statistical Models
- - Meta-Theoretical Frameworks
 :::
-
-## {.center auto-animate="true"}
-
-### Formalization
- 
-Let's discuss later!
 
 ## {.center}
 
@@ -305,48 +248,62 @@ Let's discuss later!
 ::: {.incremental}
 - theories are released with a clear and accessible usage license
 - theories meet domain-relevant community standards
-- theories are associated with detailed provenance
-:::
-
-## {.center}
-
 - theories are associated with [detailed provenance]{.highlight}
-
-## Version control for Theories {.center}
-
-## Semantic Versioning for Theories {.center}
-
-## semver {.center}
-
-::: {.small style="text-align: left;"}
-Version numbers have three numbers: MAJOR.MINOR.PATCH.
-
-Increment the:
-
-- MAJOR version when you make incompatible API changes
-- MINOR version when you add functionality in a backward-compatible manner
-- PATCH version when you make backward-compatible bug fixes
 :::
 
-## Patch, Minor, Major changes
+# FAIR Theory Utopia
 
-::: {.incremental .small}
+## Theories are no longer toothbrushes
 
-patch
-: The predictions your theory makes do not change, instead you have clarified things, defined terminology, fixed typos, added references etc.
+> "[Theories are] like toothbrushes --- no self-respecting person wants to use anyone else’s" 
 
-minor
-: The predictions your theory makes have expanded but previous predictions are substantively compatible, i.e. the theory makes the same prediction as older versions for the same settings.
-
-major
-: Evidence that would have confirmed or falsified the previous version does differently affect this version. You changed core tenets of the definition of constructs or their operationalization, changed the functional relationship between two variables, changed the type of a relation (causation to correlation) or the timescale of a process, etc.
-
+::: {style="text-align: right;"}
+--- @mischelToothbrushProblem2008
 :::
 
-## Contentious Issues
+## Theories may die as heroes
 
-* Does theory development need more structure?
-* How can we meet the challenge of formalizing theories?
-* How do theories relate to empirical tests? Do we test EESR v1.2.3?
-* Who owns a theory? Who is allowed to propose changes?
-* When should we rename a theory?
+> "[...] notice what happens to theories. [...] They never die, they just slowly fade away."
+
+::: {style="text-align: right;"}
+--- @Meehl1978
+:::
+
+## Studies may become polygam
+
+> "Progress in science depends on more than just a play of ideas; it requires the proliferation of theories and the acceptance of alternatives."
+
+::: {style="text-align: right;"}
+--- @feyerabend1970
+:::
+
+## Theories may have families
+
+> "The jingle-jangle problem permeates psychological research."
+
+> "We will call these overlapping but distinct constructs 'sibling constructs.' This term captures the fact that the constructs share a close, familial relation, but are not identical; that is, they are not 'twin constructs.'
+
+::: {style="text-align: right;"}
+--- @Lawson2021
+:::
+
+## Theories may get a history
+
+> A research programme is successful if its theoretical growth anticipates its empirical growth; that is, if new facts are discovered with its help.
+
+::: {style="text-align: right;"}
+--- @lakatos1976history
+:::
+
+## Utopia Summary
+
+* theories are developed collaboratively
+* theories are connected to
+  * their past versions
+  * other theories
+  * empierical observations
+
+## References
+
+::: {#refs}
+:::
