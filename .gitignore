@@ -24,3 +24,6 @@ decoded.svg
 _publish/
 site_libs/
 README.commonmark.md
+
+*.mov
+*.mp4
