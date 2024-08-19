@@ -154,7 +154,7 @@ Researchers must develop better, harder, faster, stronger theories by really try
 
 :::
 
-##
+## {.center}
 
 [Theorizing in the 21th century]{.r-fit-text}
 
