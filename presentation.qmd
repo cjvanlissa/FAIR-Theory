@@ -51,6 +51,7 @@ aliases:
 revealjs-plugins:
   - attribution
 google-scholar: true
+short: true # meaning a 10min talk
 ---
 
 > "Theories are nets cast to catch what we call ‘the world’: to rationalize, to explain, and to master it.
@@ -69,6 +70,33 @@ google-scholar: true
 Asking a scientist what a theory is, is a bit like asking a fish about water.
 
 ## Functionality {.center}
+
+:::: {.content-visible when-meta="short"}
+
+##
+
+::: {.incremental}
+
+**Predictive**
+: Theories predict phenomena (Popper, Hempel, van Fraassen).
+
+**Explanatory**
+: Theories explain phenomena (Hempel, Cartwright, Bohm).
+
+**Guiding Research**
+: Theories guide future research (Kuhn, Lakatos).
+
+**Organizing Knowledge**
+: Theories organize knowledge (Quine, Putnam).
+
+**Practical Utility**
+: Theories serve as tools with practical utility in the scientific endeavor (Feyerabend, van Fraassen).
+
+:::
+
+::::
+
+:::: {.content-hidden when-meta="short"}
 
 ## {.center}
 
@@ -95,6 +123,9 @@ Organizing Knowledge
 Practical Utility
 : Theories serve as tools with practical utility in various contexts, depending on the needs of the scientific endeavor (Feyerabend, van Fraassen).
 
+::::
+
+
 ## {.center}
 
 > Scientific theory is one of humankind’s most powerful inventions.
@@ -102,6 +133,8 @@ Practical Utility
 --- @Borsboom2021
 
 # How are we doing?
+
+:::: {.content-hidden when-meta="short"}
 
 ## Where do hypotheses come from? {.center}
 
@@ -131,6 +164,20 @@ Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://cr
 * "I argue that most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong." --- @scheelWhyMostPsychological2022
 * "Nevertheless, the picture painted by Meehl (1978) more than 40 years ago was a bleak one, and we believe this portrait depicts much of the modern psychological landscape." --- @Proulx2021
 
+::::
+
+::::  {.content-visible when-meta="short"}
+
+##
+
+> I argue that most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong.
+
+::: {style="text-align: right;"}
+--- @scheelWhyMostPsychological2022
+:::
+
+::::
+
 ## Who is to blame? {.center}
 
 Researchers must develop better, harder, faster, stronger theories by really trying their best.
@@ -141,7 +188,10 @@ Researchers must develop better, harder, faster, stronger theories by really try
 
 [We need better [tools]{.highlight}.]{.r-fit-text}
 
+:::: {.content-hidden when-meta="short"}
+
 ##
+
 
 ### Open Science is a success story of better tooling
 
@@ -153,6 +203,8 @@ Researchers must develop better, harder, faster, stronger theories by really try
 * Preregistration is becoming popular(-ish) because of tutorials and plattforms
 
 :::
+
+::::
 
 ## {.center}
 
