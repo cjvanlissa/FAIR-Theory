@@ -135,7 +135,7 @@ Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://cr
 
 Researchers must develop better, harder, faster, stronger theories by really trying their best.
 
-`</ironie off>`
+`</irony off>`
 
 ## {.center}
 
@@ -301,7 +301,7 @@ Researchers must develop better, harder, faster, stronger theories by really try
 * theories are connected to
   * their past versions
   * other theories
-  * empierical observations
+  * empirical observations
 
 ## References
 
