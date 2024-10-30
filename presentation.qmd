@@ -1,6 +1,6 @@
 ---
 title: "To be FAIR: Theory Development Needs an Update"
-subtitle: "DGPS 2024 Vienna"
+subtitle: "META-REP 2024"
 author:
   - name: Aaron Peikert
     affiliation:
