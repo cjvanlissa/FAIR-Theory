@@ -184,9 +184,7 @@ Researchers must develop better, harder, faster, stronger theories by really try
 
 `</irony off>`
 
-## {.center}
-
-[We need better [tools]{.highlight}.]{.r-fit-text}
+# We need better [tools]{.highlight}.
 
 :::: {.content-hidden when-meta="short"}
 
@@ -206,9 +204,7 @@ Researchers must develop better, harder, faster, stronger theories by really try
 
 ::::
 
-## {.center}
-
-[Theorizing in the 21th century]{.r-fit-text}
+# Theorizing in the 21th century
 
 # [FAIR]{data-id="fair"} Theory {.center auto-animate="true"}
 
@@ -362,6 +358,8 @@ Researchers must develop better, harder, faster, stronger theories by really try
   * easy to understand
   * has changed over time
   * is neither to vague nor to formal
+
+Get in touch! <peikert@mpib-berlin.mpg.de>
 
 ## References
 
