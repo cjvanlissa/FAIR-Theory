@@ -341,6 +341,73 @@ but not theory development.
   * other theories
   * empirical observations
 
+# Example
+
+
+
+## Morris' Tripartite Model
+
+```{r}
+knitr::include_graphics("images/morris.png")
+```
+
+## As FAIR Theory
+
+```
+tripartite <- dagitty('dag {
+PC -> CC
+PC -> EC
+PC -> PP
+PC -> O
+O -> ER
+PP -> ER
+EC -> ER
+ER -> A
+CC -> ER [form="CC:O+CC:PP+CC:EC"];
+PP -> O
+EC -> O
+PP -> EC
+}')
+```
+
+## Interoperability
+
+```
+download_theory(https://doi.org/10.5281/zenodo.14921521)
+graph_sem(tripartite)
+```
+
+```{r}
+knitr::include_graphics("images/morris_dag.png")
+```
+
+## Interoperability
+
+```
+# Simulate data
+df_sim <- simulate_data(tripartite, n = 497)
+
+# Power analysis with hypothesized parameter values
+tripartite_coef <- dagitty('dag {
+PC -> CC [beta=.4]
+PC -> EC [beta=.2]
+PC -> O [beta=0]}')
+
+# Select covariates for causal inference
+adjustmentSets(tripartite, exposure="O", outcome="ER")
+#> { CC, EC, PP }
+#> { EC, PC, PP }
+```
+
+## On Zenodo
+
+```{r}
+knitr::include_graphics("images/zenodo.png")
+```
+
+
+
+
 ## Join Us!
 
 The **Theory Methods Society** is a community dedicated to advancing theory (development) across disciplines
