@@ -1,23 +1,27 @@
 ---
-title: "To be FAIR: Theory Development Needs an Update"
-subtitle: "META-REP 2024"
+title: "To be FAIR:<br>Theory Specification Needs an Update"
+subtitle: "PYMS 2025"
 author:
+  - name: Caspar van Lissa
+    affiliation:
+      - name: "Tilburg University"
   - name: Aaron Peikert
     affiliation:
       - id: mpi
         name: "Max Planck Institute for Human Development"
-  - name: Andreas M. Brandmaier
-    affiliation:
-      - name: MSB Medical School Berlin
   - name: Maximilian S. Ernst
     affiliation:
       - ref: mpi
+  - name: Noah van Dongen
+    affiliation:
+      - name: Universiteit van Amsterdam, Erasmus Universiteit Rotterdam
   - name: Felix Schönbrodt
     affiliation:
       - name: Ludwig-Maximilians-Universität München
-  - name: Caspar van Lissa
+  - name: Andreas M. Brandmaier
     affiliation:
-      - name: "Tilburg University"
+      - name: MSB Medical School Berlin
+
 format:
   revealjs: 
     theme: [default, mpi.scss]
@@ -51,7 +55,7 @@ aliases:
 revealjs-plugins:
   - attribution
 google-scholar: true
-short: true # meaning a 10min talk
+short: false # meaning a 10min talk
 ---
 
 > "Theories are nets cast to catch what we call ‘the world’: to rationalize, to explain, and to master it.
@@ -125,31 +129,20 @@ Practical Utility
 
 ::::
 
-
 ## {.center}
 
-> Scientific theory is one of humankind’s most powerful inventions.
 
---- @Borsboom2021
+```{r}
+knitr::include_graphics("images/empirical_cycle2.svg")
+```
+
+
+(De Groot)
+
 
 # How are we doing?
 
 :::: {.content-hidden when-meta="short"}
-
-## Where do hypotheses come from? {.center}
-
-![](https://imgs.xkcd.com/comics/hypothesis_generation.png)
-
-
-::: {.center .small}
-
-Frazzled scientists are requesting that everyone please stop generating hypotheses for a little bit while they work through the backlog.
-
-:::
-
-::: attribution
-Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://creativecommons.org/licenses/by-nc/2.5/).
-:::
 
 
 ## {.incremental}
@@ -161,7 +154,7 @@ Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://cr
 
 ## {.incremental}
 
-* "I argue that most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong." --- @scheelWhyMostPsychological2022
+* "most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong." --- @scheelWhyMostPsychological2022
 * "Nevertheless, the picture painted by Meehl (1978) more than 40 years ago was a bleak one, and we believe this portrait depicts much of the modern psychological landscape." --- @Proulx2021
 
 ::::
@@ -170,7 +163,7 @@ Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://cr
 
 ##
 
-> I argue that most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong.
+> most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong.
 
 ::: {style="text-align: right;"}
 --- @scheelWhyMostPsychological2022
@@ -178,33 +171,30 @@ Comic courtesy of [XKCD](https://xkcd.com/2569/) under [CC-BY-NC 2.5](https://cr
 
 ::::
 
-## Who is to blame? {.center}
 
-Researchers must develop better, harder, faster, stronger theories by really trying their best.
-
-`</irony off>`
-
-# We need better [tools]{.highlight}.
+# The [solution]{.highlight}.
 
 :::: {.content-hidden when-meta="short"}
 
 ##
 
 
-### Open Science is a success story of better tooling
+## Applying Open Science to Theory Specification
 
 ::: {.incremental}
 
-* Open Data is enabled by research data repositories
-* Open Code is driven by widespread availibility of open source software
-* Open Access is only thinkable because of extensive infrastructure
-* Preregistration is becoming popular(-ish) because of tutorials and plattforms
+*	Open science practices have improved many areas of research, 
+but not theory development.
+* *Open Data* is enabled by research data repositories
+* *Open Code* is driven by widespread availibility of open source software
+* *Open Access* is only thinkable because of extensive infrastructure
+* *Hypothesis testing* is improved by preregistration and replication
 
 :::
 
 ::::
 
-# Theorizing in the 21th century
+# What about Theory?
 
 # [FAIR]{data-id="fair"} Theory {.center auto-animate="true"}
 
@@ -214,7 +204,7 @@ Researchers must develop better, harder, faster, stronger theories by really try
 
 [**F**]{.highlight}indability, [**A**]{.highlight}ccessibility, [**I**]{.highlight}nteroperability, and [**R**]{.highlight}euse of
 
-[**digital assets**]{.highlight}
+[**information artifacts**]{.highlight}
 
 ## {.center auto-animate="true"}
 
@@ -232,7 +222,7 @@ Researchers must develop better, harder, faster, stronger theories by really try
 
 ### Formalization
 
-> „Crucially, scientific models are expressed in unambiguous language such that **anyone can interpret the model and its claims about the world**. Contrary to mental models (which live in a person’s mind), scientific models are **transparent and public** (that is, external) representations.”  
+> „scientific models [...] expressed in unambiguous language such that **anyone can interpret the model and its claims about the world**. Contrary to mental models (which live in a person’s mind), scientific models are **transparent and public** (that is, external) representations.”  
 
 ::: {style="text-align: right;"}
 --- @vanRooij2022
@@ -351,15 +341,111 @@ Researchers must develop better, harder, faster, stronger theories by really try
   * other theories
   * empirical observations
 
-## Help needed
+# Example
 
-* a great example is a didactical goldmine
-* do you know a theory, that is:
-  * easy to understand
-  * has changed over time
-  * is neither to vague nor to formal
 
-Get in touch! <peikert@mpib-berlin.mpg.de>
+
+## Morris' Tripartite Model
+
+```{r}
+knitr::include_graphics("images/morris.png")
+```
+
+## As FAIR Theory
+
+```
+tripartite <- dagitty('dag {
+PC -> CC
+PC -> EC
+PC -> PP
+PC -> O
+O -> ER
+PP -> ER
+EC -> ER
+ER -> A
+CC -> ER [form="CC:O+CC:PP+CC:EC"];
+PP -> O
+EC -> O
+PP -> EC
+}')
+```
+
+## Interoperability
+
+```
+download_theory(https://doi.org/10.5281/zenodo.14921521)
+graph_sem(tripartite)
+```
+
+```{r}
+knitr::include_graphics("images/morris_dag.png")
+```
+
+## Interoperability
+
+```
+# Simulate data
+df_sim <- simulate_data(tripartite, n = 497)
+
+# Power analysis with hypothesized parameter values
+tripartite_coef <- dagitty('dag {
+PC -> CC [beta=.4]
+PC -> EC [beta=.2]
+PC -> O [beta=0]}')
+
+# Select covariates for causal inference
+adjustmentSets(tripartite, exposure="O", outcome="ER")
+#> { CC, EC, PP }
+#> { EC, PC, PP }
+```
+
+## On Zenodo
+
+```{r}
+knitr::include_graphics("images/zenodo.png")
+```
+
+
+
+
+## Join Us!
+
+The **Theory Methods Society** is a community dedicated to advancing theory (development) across disciplines
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Expand your network
+* Learn about relevant events
+* Receive job opportunities
+
+<https://tiny.cc/tms_site>
+
+:::
+
+::: {.column width="50%"}
+
+<font size = 5>
+If you are interested in:
+
+* Theory development
+*	Formal theories
+*	Toy models
+*	Philosophy of science
+*	(Interpretable) machine learning
+*	Simulation studies
+*	Meta-science
+*	Open science
+
+</font>
+
+:::
+
+::::
+
+
+
 
 ## References
 
