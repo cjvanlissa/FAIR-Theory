@@ -1,0 +1,386 @@
+---
+title: "To be FAIR:<br>Theory Specification Needs an Update"
+subtitle: "PYMS 2025"
+author:
+  - name: Caspar van Lissa
+    affiliation:
+      - name: "Tilburg University"
+  - name: Aaron Peikert
+    affiliation:
+      - id: mpi
+        name: "Max Planck Institute for Human Development"
+  - name: Maximilian S. Ernst
+    affiliation:
+      - ref: mpi
+  - name: Noah van Dongen
+    affiliation:
+      - name: Universiteit van Amsterdam, Erasmus Universiteit Rotterdam
+  - name: Felix Schönbrodt
+    affiliation:
+      - name: Ludwig-Maximilians-Universität München
+  - name: Andreas M. Brandmaier
+    affiliation:
+      - name: MSB Medical School Berlin
+
+format:
+  revealjs: 
+    theme: [default, mpi.scss]
+    slide-number: c/t
+    title-slide-attributes:
+      data-background-image: decoded.svg
+      data-background-size: contain 
+      data-background-opacity: ".1"
+    include-in-header:
+      - text: |
+         <link rel = "shortcut icon" href = "https://www.mpg.de/favicon.ico" />
+         <script>
+          Reveal.addEventListener('stats', function() {
+          // Called each time the slide with the "stats" state is made visible
+            document.getElementById('deductionAnimation').beginElement();
+          });
+         </script>
+    footer: "[Edit](https://github.com/aaronpeikert/FAIR-Theory/edit/main/presentation.qmd)"
+    html-math-method:
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js"
+    template-partials:
+      - title-slide.html
+    mermaid-format: js
+    hash-type: "number"
+bibliography: references.bib
+nocite: |
+  @item1
+aliases:
+  - index.html
+revealjs-plugins:
+  - attribution
+google-scholar: true
+short: false # meaning a 10min talk
+---
+
+> "Theories are nets cast to catch what we call ‘the world’: to rationalize, to explain, and to master it.
+> We endeavor to make the mesh ever finer and finer."
+
+::: {style="text-align: right;"}
+--- @feyerabend1970
+:::
+
+# FAIR [Theory]{data-id="theory"} {.center auto-animate="true"}
+
+# FAIR [Theory]{.highlight data-id="theory"} {.center auto-animate="true"}
+
+## [Theory]{data-id="theory"} {.center .nostretch auto-animate="true"}
+
+Asking a scientist what a theory is, is a bit like asking a fish about water.
+
+## Functionality {.center}
+
+:::: {.content-visible when-meta="short"}
+
+##
+
+::: {.incremental}
+
+**Predictive**
+: Theories predict phenomena (Popper, Hempel, van Fraassen).
+
+**Explanatory**
+: Theories explain phenomena (Hempel, Cartwright, Bohm).
+
+**Guiding Research**
+: Theories guide future research (Kuhn, Lakatos).
+
+**Organizing Knowledge**
+: Theories organize knowledge (Quine, Putnam).
+
+**Practical Utility**
+: Theories serve as tools with practical utility in the scientific endeavor (Feyerabend, van Fraassen).
+
+:::
+
+::::
+
+:::: {.content-hidden when-meta="short"}
+
+## {.center}
+
+Predictive 
+: Theories provide predictions that can be tested and refined (Popper, Hempel, van Fraassen).
+
+## {.center}
+
+Explanatory 
+: Theories offer explanations for phenomena, helping to make sense of the world (Hempel, Cartwright, Bohm).
+
+## {.center}
+
+Guiding Research 
+: Theories guide scientific research by setting the agenda for normal science or research programs (Kuhn, Lakatos).
+
+## {.center}
+
+Organizing Knowledge
+: Theories organize and integrate knowledge within a broader conceptual framework (Quine, Putnam).
+
+## {.center}
+
+Practical Utility
+: Theories serve as tools with practical utility in various contexts, depending on the needs of the scientific endeavor (Feyerabend, van Fraassen).
+
+::::
+
+## {.center}
+
+
+```{r}
+knitr::include_graphics("images/empirical_cycle2.svg")
+```
+
+
+(De Groot)
+
+
+# How are we doing?
+
+:::: {.content-hidden when-meta="short"}
+
+
+## {.incremental}
+
+* 89.6% of published studies tests hypotheses [@kuhbergerPublicationBiasPsychology2014].
+* only 15% of deductive studies even reference specific theories [@mcphetresDecadeTheoryReflected2021].
+* a theory crisis has been proclaimed by @scheelWhyHypothesisTesters2021
+* "Theories are rarely developed in a way that indicates an accumulation of knowledge." --- @robinaughInvisibleHandsFine2021
+
+## {.incremental}
+
+* "most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong." --- @scheelWhyMostPsychological2022
+* "Nevertheless, the picture painted by Meehl (1978) more than 40 years ago was a bleak one, and we believe this portrait depicts much of the modern psychological landscape." --- @Proulx2021
+
+::::
+
+::::  {.content-visible when-meta="short"}
+
+##
+
+> most claims in the literature are so critically underspecified that attempts to empirically evaluate them are doomed to failure---they are not even wrong.
+
+::: {style="text-align: right;"}
+--- @scheelWhyMostPsychological2022
+:::
+
+::::
+
+
+# The [solution]{.highlight}.
+
+:::: {.content-hidden when-meta="short"}
+
+##
+
+
+## Applying Open Science to Theory Specification
+
+::: {.incremental}
+
+*	Open science practices have improved many areas of research, 
+but not theory development.
+* *Open Data* is enabled by research data repositories
+* *Open Code* is driven by widespread availibility of open source software
+* *Open Access* is only thinkable because of extensive infrastructure
+* *Hypothesis testing* is improved by preregistration and replication
+
+:::
+
+::::
+
+# What about Theory?
+
+# [FAIR]{data-id="fair"} Theory {.center auto-animate="true"}
+
+# [FAIR]{.highlight data-id="fair"} Theory {.center auto-animate="true"}
+
+## [FAIR]{data-id="fair"} {.center .nostretch auto-animate="true"}
+
+[**F**]{.highlight}indability, [**A**]{.highlight}ccessibility, [**I**]{.highlight}nteroperability, and [**R**]{.highlight}euse of
+
+[**information artifacts**]{.highlight}
+
+## {.center auto-animate="true"}
+
+### [Formalization →]{.invisible data-id="form"}[Digitalization]{.highlight data-id="digi"}[→ FAIRification]{.invisible data-id="fair"}
+
+## {.center auto-animate="true"}
+
+### [Formalization →]{.highlight data-id="form"}[Digitalization]{data-id="digi"}[→ FAIRification]{.invisible data-id="fair"}
+
+## {.center auto-animate="true"}
+
+### [Formalization →]{data-id="form"}[Digitalization]{data-id="digi"}[→ FAIRification]{.highlight data-id="fair"}
+
+## {.center auto-animate="true"}
+
+### Formalization
+
+> „scientific models [...] expressed in unambiguous language such that **anyone can interpret the model and its claims about the world**. Contrary to mental models (which live in a person’s mind), scientific models are **transparent and public** (that is, external) representations.”  
+
+::: {style="text-align: right;"}
+--- @vanRooij2022
+:::
+
+## {.center auto-animate="true"}
+
+### Formalization
+
+> The only principle that does not inhibit progress is: anything goes.
+
+::: {style="text-align: right;"}
+--- @feyerabend1970
+:::
+
+## {.center auto-animate="true"}
+
+### Formalization
+ 
+::: {.incremental}
+ - Formulas
+ - Operational Definitions
+ - Nomological Networks
+ - Computer Programs
+ - Graphical Models
+ - Axiomatic Systems
+ - Algorithmic Descriptions
+ - Decision Trees and Flowcharts
+ - Statistical Models
+:::
+
+## {.center}
+
+### [Formalization →]{data-id="form"}[Digitalization]{data-id="digi"}[→ FAIRification]{.highlight data-id="fair"}
+
+## [F]{.highlight}indable {.center auto-animate="true"}
+
+::: {.incremental}
+- universally unique persistent identifiers, e.g., DOI
+- metadata describing the theory
+- indexed and searchable
+:::
+
+## [A]{.highlight}ccessible {.center auto-animate="true"}
+
+::: {.incremental}
+- everyone knows how to access the theory
+- it is clear what the theory constitutes (i.e., it is separate from a paper)
+:::
+
+## [I]{.highlight}nteroperable {.center auto-animate="true"}
+
+::: {.incremental}
+- theories use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+- theories use vocabularies that follow FAIR principles
+- theories include qualified references to other theories
+:::
+
+## [R]{.highlight}eusable {.center auto-animate="true"}
+
+::: {.incremental}
+- theories are released with a clear and accessible usage license
+- theories meet domain-relevant community standards
+- theories are associated with [detailed provenance]{.highlight}
+:::
+
+# FAIR Theory Utopia
+
+## Theories are no longer toothbrushes
+
+> "[Theories are] like toothbrushes --- no self-respecting person wants to use anyone else’s" 
+
+::: {style="text-align: right;"}
+--- @mischelToothbrushProblem2008
+:::
+
+## Theories may die as heroes
+
+> "[...] notice what happens to theories. [...] They never die, they just slowly fade away."
+
+::: {style="text-align: right;"}
+--- @Meehl1978
+:::
+
+## Studies may become polygam
+
+> "Progress in science depends on more than just a play of ideas; it requires the proliferation of theories and the acceptance of alternatives."
+
+::: {style="text-align: right;"}
+--- @feyerabend1970
+:::
+
+## Theories may have families
+
+> "The jingle-jangle problem permeates psychological research."
+
+> "We will call these overlapping but distinct constructs 'sibling constructs.' This term captures the fact that the constructs share a close, familial relation, but are not identical; that is, they are not 'twin constructs.'
+
+::: {style="text-align: right;"}
+--- @Lawson2021
+:::
+
+## Theories may get a history
+
+> A research programme is successful if its theoretical growth anticipates its empirical growth; that is, if new facts are discovered with its help.
+
+::: {style="text-align: right;"}
+--- @lakatos1976history
+:::
+
+## Utopia Summary
+
+* theories are developed collaboratively
+* theories are connected to
+  * their past versions
+  * other theories
+  * empirical observations
+
+## Join Us!
+
+The **Theory Methods Society** is a community dedicated to advancing theory (development) across disciplines
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+* Expand your network
+* Learn about relevant events
+* Receive job opportunities
+
+<https://tiny.cc/tms_site>
+
+:::
+
+::: {.column width="50%"}
+
+<font size = 5>
+If you are interested in:
+
+* Theory development
+*	Formal theories
+*	Toy models
+*	Philosophy of science
+*	(Interpretable) machine learning
+*	Simulation studies
+*	Meta-science
+*	Open science
+
+</font>
+
+:::
+
+::::
+
+
+
+
+## References
+
+::: {#refs}
+:::
