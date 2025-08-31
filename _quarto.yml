@@ -1,8 +1,11 @@
 project:
   type: website
   title: "FAIR Theory"
-  render: 
+  render:
     - presentation.qmd
+    - presentation_-_ESCOP_2.qmd
+    - presentation_-_FGT.qmd
+    - presentation_-_PYMS.qmd
     - README.qmd
   pre-render: minerva/decode.lua
   post-render:

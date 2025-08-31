@@ -1,12 +1,23 @@
 ---
 title: "To be FAIR: Theory Development Needs an Update"
-format: md
+format: html
 toc: true
 keep-md: true
 date-modified: "`r Sys.Date()`"
 keywords: ["FAIR", "theory", "software engineering", "open science"]
 appendix-cite-as: display
 ---
+
+```{r, results='asis', echo = FALSE}
+f <- readLines("_quarto.yml")
+f <- f[(grep("\\srender:", f)+1L):(grep("README.qmd", f)-1L)]
+f <- gsub("^.+\\s(.+)\\.qmd$", "\\1", f)
+for(i in f){
+  cat("* [", i, "](", i, ".html)\n", sep = "")
+}
+
+```
+
 
 {{< include abstract.md >}}
 

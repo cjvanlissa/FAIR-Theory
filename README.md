@@ -1,5 +1,10 @@
 # To be FAIR: Theory Development Needs an Update
 
+-   [presentation](presentation%20.html)
+-   [presentation\_-\_ESCOP_2](presentation_-_ESCOP_2%20.html)
+-   [presentation\_-\_FGT](presentation_-_FGT%20.html)
+-   [presentation\_-\_PYMS](presentation_-_PYMS%20.html)
+
 We introduce the concept of FAIR theories, reimagining theories as
 dynamic, evolving entities collaboratively developed and refined, thus
 contributing to a more robust and interconnected body of scientific
