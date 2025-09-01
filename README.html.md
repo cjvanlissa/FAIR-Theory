@@ -3,7 +3,7 @@ title: "To be FAIR: Theory Development Needs an Update"
 format: html
 toc: true
 keep-md: true
-date-modified: "2025-08-31"
+date-modified: "2025-09-01"
 keywords: ["FAIR", "theory", "software engineering", "open science"]
 appendix-cite-as: display
 ---

@@ -1,6 +1,6 @@
 ---
 title: "To be FAIR: Theory Development Needs an Update"
-format: html
+format: md
 toc: true
 keep-md: true
 date-modified: "`r Sys.Date()`"
