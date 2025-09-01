@@ -132,10 +132,7 @@ Practical Utility
 ## {.center}
 
 
-```{r}
-knitr::include_graphics("images/empirical_cycle2.svg")
-```
-
+![](images/empirical_cycle2.svg)
 
 (De Groot)
 
@@ -347,9 +344,8 @@ but not theory development.
 
 ## Morris' Tripartite Model
 
-```{r}
-knitr::include_graphics("images/morris.png")
-```
+![](images/morris.png)
+
 
 ## As FAIR Theory
 
@@ -377,9 +373,8 @@ download_theory(https://doi.org/10.5281/zenodo.14921521)
 graph_sem(tripartite)
 ```
 
-```{r}
-knitr::include_graphics("images/morris_dag.png")
-```
+![](images/morris_dag.png)
+
 
 ## Interoperability
 
@@ -401,10 +396,7 @@ adjustmentSets(tripartite, exposure="O", outcome="ER")
 
 ## On Zenodo
 
-```{r}
-knitr::include_graphics("images/zenodo.png")
-```
-
+![](images/zenodo.png)
 
 
 
