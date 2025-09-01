@@ -181,7 +181,24 @@ De Groot, 1963
 Coders identify **snippets**:
 
 ```{r eval = TRUE}
-SDT1 <- read.csv(system.file("sdt1.txt", package = "theorytools"))
+SDT1 <- structure(list(Nr = 1:8, IF = c("nutriments are absent", "[intrinsic motivation OR integration] is present", 
+"needs are satisfied or thwarted", "rewards given", "external event is expected to thwart the basic needs", 
+"external perceived locus of causality", "external event is expected to support the basic needs", 
+"internal perceived locus of causality"), Then = c("intrinsic motivation AND integration are impaired", 
+"healthy development AND psychological well-being take place", 
+"psychological well-being of all people is affected", "intrinsic motivation can decrease", 
+"external perceived locus of causality", "undermined intrinsic motivation", 
+"internal perceived locus of causality", "enhanced intrinsic motivation"
+), Reference...Comments...Markers = c("“For these natural, active processes of intrinsic motivation and integration to operate effectively toward healthy development and psychological well-being, human beings need particular nutriments – both biological and psychological (Ryan, 1995). In the relative absence of such nutriments, these natural processes will be impaired, resulting in experiences, development, and behaviors that are less than optimal. (Deci & Ryan, 2012, p. 417)", 
+"“For these natural, active processes of intrinsic motivation and integration to operate effectively toward healthy development and psychological well-being, human beings need particular nutriments – both biological and psychological (Ryan, 1995). In the relative absence of such nutriments, these natural processes will be impaired, resulting in experiences, development, and behaviors that are less than optimal. (Deci & Ryan, 2012, p. 417)", 
+"“The three basic psychological needs are universal such that their satisfaction versus thwarting affects the psychological well-being of all people.” (Deci & Ryan, 2012, p. 425)", 
+"“rewards do not always motivate subsequent persistence; indeed they can undermine intrinsic motivation” (Deci & Ryan, 2012, p. 417)", 
+"“[Intrinsic motivation] could be either undermined or enhanced depending on whether the social environment supported or thwarted the needs for competence and self-determination. If a reward or other external event such as threat of punishment (Deci and Cascio, 1972), positive feedback (Deci, 1971), competition (Deci and Betley et al., 1981), or choice (Zuckerman et al., 1978) were expected to thwart these basic needs, it was predicted to prompt an external perceived locus of causality and undermine intrinsic motivation; but if the event were expected to support these basic needs, it was predicted to prompt an internal perceived locus of causality and enhance intrinsic motivation.” (Deci & Ryan, 2012, p. 418)", 
+"“[Intrinsic motivation] could be either undermined or enhanced depending on whether the social environment supported or thwarted the needs for competence and self-determination. If a reward or other external event such as threat of punishment (Deci and Cascio, 1972), positive feedback (Deci, 1971), competition (Deci and Betley et al., 1981), or choice (Zuckerman et al., 1978) were expected to thwart these basic needs, it was predicted to prompt an external perceived locus of causality and undermine intrinsic motivation; but if the event were expected to support these basic needs, it was predicted to prompt an internal perceived locus of causality and enhance intrinsic motivation.” (Deci & Ryan, 2012, p. 418)", 
+"“[Intrinsic motivation] could be either undermined or enhanced depending on whether the social environment supported or thwarted the needs for competence and self-determination. If a reward or other external event such as threat of punishment (Deci and Cascio, 1972), positive feedback (Deci, 1971), competition (Deci and Betley et al., 1981), or choice (Zuckerman et al., 1978) were expected to thwart these basic needs, it was predicted to prompt an external perceived locus of causality and undermine intrinsic motivation; but if the event were expected to support these basic needs, it was predicted to prompt an internal perceived locus of causality and enhance intrinsic motivation.” (Deci & Ryan, 2012, p. 418)", 
+"“[Intrinsic motivation] could be either undermined or enhanced depending on whether the social environment supported or thwarted the needs for competence and self-determination. If a reward or other external event such as threat of punishment (Deci and Cascio, 1972), positive feedback (Deci, 1971), competition (Deci and Betley et al., 1981), or choice (Zuckerman et al., 1978) were expected to thwart these basic needs, it was predicted to prompt an external perceived locus of causality and undermine intrinsic motivation; but if the event were expected to support these basic needs, it was predicted to prompt an internal perceived locus of causality and enhance intrinsic motivation.” (Deci & Ryan, 2012, p. 418)"
+)), class = "data.frame", row.names = c(NA, -8L))
+
 names(SDT1) <- c("N", "IF", "THEN", "Original")
 # Show first snippet (source text)
 unique(SDT1[, "Original", drop = TRUE])
@@ -210,7 +227,19 @@ knitr::kable(SDT1[, 1:4], caption = "SDT translated into IF/THEN statements")
 ```{r eval = TRUE}
 library(theorytools)
 library(dagitty)
-edges_raw <- read.csv(system.file("sdt.txt", package = "theorytools"))
+edges_raw <- structure(list(Nr = c(1L, 1L, 2L, 2L, 2L, 2L, 3L, 4L, 5L, 5L, 
+6L, 7L, 7L, 8L), from = c("needs", "needs", "intrinsic_motivation", 
+"intrinsic_motivation", "integration", "integration", "needs", 
+"external_event", "external_event", "external_event", "locus_of_causality", 
+"external_event", "external_event", "locus_of_causality"), to = c("intrinsic_motivation", 
+"integration", "healthy_development", "wellbeing", "healthy_development", 
+"wellbeing", "wellbeing", "intrinsic_motivation", "needs", "locus_of_causality", 
+"intrinsic_motivation", "locus_of_causality", "needs", "intrinsic_motivation"
+), form = c(NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, 
+NA)), class = "data.frame", row.names = c(NA, -14L))
+
+
+  #read.csv(system.file("sdt.txt", package = "theorytools"))
 SDT <- unique(edges_raw[, 2:3])
 knitr::kable(SDT)
 ```
