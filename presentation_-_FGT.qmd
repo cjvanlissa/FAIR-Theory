@@ -37,9 +37,8 @@ Unique contribution:
 *The role of fathers’ versus mothers’ parenting in emotion-regulation development from mid–late adolescence*  
 ([Van Lissa et al., 2019](https://doi.org/10.1037/dev0000612))
 
-```{r}
-knitr::include_graphics("images/sdt_lissa.png")
-```
+![](images/sdt_lissa.png)
+
 
 ## Why FAIR Theory?
 
@@ -48,9 +47,8 @@ knitr::include_graphics("images/sdt_lissa.png")
 * What use does theory serve in my work? Nothing practical
 * More like a "framework" to contextualize the work
 
-```{r}
-knitr::include_graphics("images/sdt_lissa.png")
-```
+![](images/sdt_lissa.png)
+
 
 ---
 
@@ -64,9 +62,8 @@ knitr::include_graphics("images/sdt_lissa.png")
 
 ## The Empirical Cycle
 
-```{r}
-knitr::include_graphics("images/empirical_cycle2.svg")
-```
+![](images/empirical_cycle2.svg)
+
 
 De Groot, 1963
 
