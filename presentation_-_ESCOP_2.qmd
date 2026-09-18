@@ -47,9 +47,7 @@ format:
       - title-slide.html
     mermaid-format: js
     hash-type: "number"
-bibliography: references.bib
-nocite: |
-  @item1
+bibliography: escop.bib
 aliases:
   - index.html
 revealjs-plugins:
@@ -74,6 +72,7 @@ Asking a scientist what a theory is, is a bit like asking a fish about water.
 
 ![](images/sdt_lissa.png)
 
+---
 
 ## Is it Useful?
 
@@ -95,6 +94,8 @@ Asking a scientist what a theory is, is a bit like asking a fish about water.
 * most claims [are] so critically underspecified that attempts to empirically evaluate them are doomed to failure - they are **not even wrong**." [@scheelWhyMostPsychological2022]
 * "Theories are rarely developed in a way that indicates an accumulation of knowledge." [@robinaughInvisibleHandsFine2021]
 
+---
+
 ## The Empirical Cycle
 
 ![](images/empirical_cycle2.svg)
@@ -112,6 +113,9 @@ De Groot, 1963
 [**F**]{.highlight}indability, [**A**]{.highlight}ccessibility, [**I**]{.highlight}nteroperability, and [**R**]{.highlight}euse of
 
 [**information artifacts**]{.highlight}
+
+
+---
 
 
 ## What kind of Theories?
@@ -133,12 +137,15 @@ De Groot, 1963
 - With abundant metadata describing the theory and its provenance
 - Via persistent identifier, or DOI
 
+---
+
 ## [A]{.highlight}ccessible
 
 - Plain text, human- and machine-readable file types
 - Everyone knows how to, and ideally can, access the theory
 - The theory is a distinct resource, separate from (but possibly related to) a paper or book (chapter)
 
+---
 
 ## [I]{.highlight}nteroperable
 
@@ -149,6 +156,8 @@ De Groot, 1963
 - X-interoperable: *Interoperable for what*?
     + Document *how* a theory is interoperable for specific purposes 
 
+---
+
 ## [R]{.highlight}eusable {.center auto-animate="true"}
 
 - Legally and practically reusable
@@ -156,10 +165,12 @@ De Groot, 1963
 - Meet domain-relevant community standards
 - Detailed provenance, referencing ancestors
 
+---
+
 ## FAIR Theory Utopia {.smaller}
 
 * No more toothbrushes
-	+ "[Theories are] like toothbrushes --- no self-respecting person wants to use anyone else’s" [@mischelToothbrushProblem2008]
+	+ "[Theories are] like toothbrushes --- no self-respecting person wants to use anyone else’s" [@mischelToothbrushProblem2008; based on @watkinsModelsToothbrushes1984]
 * Let a thousand flowers bloom: 
 	+ "Progress in science depends on more than just a play of ideas; it requires the proliferation of theories and the acceptance of alternatives." (Feyerabend, 1970)
 * But kill your darlings: 
@@ -168,6 +179,7 @@ De Groot, 1963
 * Theories have a history, a full timeline of their ancestry and development
 * Automatic tests can be run on all available datasets, pitting theories against each other in an ongoing manner (leaderboard/integration testing)
 
+---
 
 # Example: FAIRifying Self-Determination Theory
 
@@ -175,6 +187,8 @@ De Groot, 1963
 
 - **Proposition-Based Theory Specification (PBTS)** (Glöckner & Fiedler):
 - SDT chapter: @deciSelfDeterminationTheory2012 in @vanlangeHandbookTheoriesSocial2012  
+
+---
 
 ## Identify Relevant Claims
 
@@ -258,6 +272,8 @@ SDT <- dagitty::dagitty(
 SDT
 ```
 
+---
+
 ## Make It FAIR
 
 Package SDT as a **FAIR theory**:
@@ -326,6 +342,8 @@ p$nodes$label <- renam[p$nodes$name]
 plot(p)
 ```
 
+---
+
 ## Interoperability: Control Variables
 
 ```{r echo=TRUE, eval = FALSE}
@@ -337,7 +355,7 @@ adjustmentSets(SDT,
 #> { needs }
 ```
 
-
+---
 
 ## Interoperability: Simulate Data
 
@@ -350,6 +368,8 @@ simulate_data(SDT, n = 497)
 # Simulate data
 round(simulate_data(SDT, n = 5), 2)
 ```
+
+---
 
 ## Interoperability: Power Analysis
 
@@ -372,6 +392,8 @@ replicate(
 )
 )
 ```
+
+---
 
 ## Join Us!
 
@@ -408,6 +430,8 @@ If you are interested in:
 :::
 
 ::::
+
+---
 
 
 ## References
