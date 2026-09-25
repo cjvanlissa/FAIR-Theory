@@ -9,7 +9,7 @@ permissions: read-all
 
 jobs:
   build-deploy:
-    runs-on: windows-latest
+    runs-on: 	ubuntu-latest
     permissions:
       contents: write
     steps:
