@@ -6,8 +6,8 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Van Lissa, Li, &amp; Weber">
   <title>FAIR Theory – Formalizing Self-Determination Theory</title>
@@ -17,10 +17,16 @@
   <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
   <style>
-    code{white-space: pre-wrap;}
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -98,7 +104,6 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
-      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -115,7 +120,7 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-864c5404f4710dceefb0a9fe440f50a1.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-fc36d58f2b3a1f1c68d136a0c4cb29e5.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -221,7 +226,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<em>Van Lissa</em>, Li, &amp; Weber 
+<em>Van Lissa</em>, Li, &amp; Weber
 </div>
 </div>
 </div>
@@ -261,7 +266,7 @@
 <section id="theory-crisis-in-psychology" class="slide level2">
 <h2>“Theory Crisis” in Psychology</h2>
 <ul>
-<li>89.6% of published studies tests hypotheses <span class="citation" data-cites="kuhbergerPublicationBiasPsychology2014">(<a href="#/join-us" role="doc-biblioref" onclick="">Kühberger, Fritz, and Scherndl 2014</a>)</span>.</li>
+<li>89.6% of published studies tests hypotheses <span class="citation" data-cites="kuhbergerPublicationBiasPsychology2014">(<a href="#/join-us" role="doc-biblioref" onclick="">Kühberger et al. 2014</a>)</span>.</li>
 <li>only 15% of deductive studies even reference specific theories <span class="citation" data-cites="mcphetresDecadeTheoryReflected2021">(<a href="#/join-us" role="doc-biblioref" onclick="">McPhetres et al. 2021</a>)</span>.</li>
 <li>most claims [are] so critically underspecified that attempts to empirically evaluate them are doomed to failure - they are <strong>not even wrong</strong>.” <span class="citation" data-cites="scheelWhyMostPsychological2022">(<a href="#/join-us" role="doc-biblioref" onclick="">Scheel 2022</a>)</span></li>
 <li>“Theories are rarely developed in a way that indicates an accumulation of knowledge.” <span class="citation" data-cites="robinaughInvisibleHandsFine2021">(<a href="#/join-us" role="doc-biblioref" onclick="">Robinaugh et al. 2021</a>)</span></li>
@@ -362,7 +367,7 @@
 <section id="step-1---select-sources" class="slide level2">
 <h2>Step 1 - Select Sources</h2>
 <ul>
-<li>SDT chapter: <span class="citation" data-cites="deciSelfDeterminationTheory2012">Deci and Ryan (<a href="#/join-us" role="doc-biblioref" onclick="">2012</a>)</span> in <span class="citation" data-cites="vanlangeHandbookTheoriesSocial2012">Van Lange, Kruglanski, and Higgins (<a href="#/join-us" role="doc-biblioref" onclick="">2012</a>)</span><br>
+<li>SDT chapter: <span class="citation" data-cites="deciSelfDeterminationTheory2012">Deci and Ryan (<a href="#/join-us" role="doc-biblioref" onclick="">2012</a>)</span> in <span class="citation" data-cites="vanlangeHandbookTheoriesSocial2012">Van Lange et al. (<a href="#/join-us" role="doc-biblioref" onclick="">2012</a>)</span><br>
 </li>
 <li>Also considered <a href="https://selfdeterminationtheory.org" class="uri">https://selfdeterminationtheory.org</a>
 <ul>
@@ -618,12 +623,12 @@
 <section id="turn-into-dag" class="slide level2">
 <h2>Turn Into DAG</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>SDT <span class="ot">&lt;-</span> dagitty<span class="sc">::</span><span class="fu">dagitty</span>(</span>
-<span id="cb2-2"><a></a>  <span class="fu">paste0</span>(<span class="st">"dag {"</span>,</span>
-<span id="cb2-3"><a></a>  <span class="fu">paste0</span>(SDT<span class="sc">$</span>from, <span class="st">" -&gt; "</span>, SDT<span class="sc">$</span>to, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>),</span>
-<span id="cb2-4"><a></a>  <span class="st">"}"</span>)</span>
-<span id="cb2-5"><a></a>)</span>
-<span id="cb2-6"><a></a>SDT</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a>SDT <span class="ot">&lt;-</span> dagitty<span class="sc">::</span><span class="fu">dagitty</span>(</span>
+<span id="cb2-2"><a aria-label="2"></a>  <span class="fu">paste0</span>(<span class="st">"dag {"</span>,</span>
+<span id="cb2-3"><a aria-label="3"></a>  <span class="fu">paste0</span>(SDT<span class="sc">$</span>from, <span class="st">" -&gt; "</span>, SDT<span class="sc">$</span>to, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>),</span>
+<span id="cb2-4"><a aria-label="4"></a>  <span class="st">"}"</span>)</span>
+<span id="cb2-5"><a aria-label="5"></a>)</span>
+<span id="cb2-6"><a aria-label="6"></a>SDT</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>dag {
 external_event
@@ -652,14 +657,14 @@ needs -&gt; wellbeing
 <h2>Step 4 — Make It FAIR</h2>
 <p>Package SDT as a <strong>FAIR theory</strong>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">library</span>(theorytools)</span>
-<span id="cb4-2"><a></a><span class="fu">create_fair_theory</span>(</span>
-<span id="cb4-3"><a></a>  <span class="at">path =</span> <span class="st">"SDT"</span>,</span>
-<span id="cb4-4"><a></a>  <span class="at">title =</span> <span class="st">"Self-Determination Theory"</span>,</span>
-<span id="cb4-5"><a></a>  <span class="at">theory_file =</span> <span class="fu">c</span>(<span class="st">"sdt.txt"</span>, <span class="st">"definitions.csv"</span>),</span>
-<span id="cb4-6"><a></a>  <span class="at">remote_repo =</span> <span class="st">"self_determination_theory"</span>,</span>
-<span id="cb4-7"><a></a>  <span class="at">add_license =</span> <span class="st">"cc0"</span></span>
-<span id="cb4-8"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="fu">library</span>(theorytools)</span>
+<span id="cb4-2"><a aria-label="2"></a><span class="fu">create_fair_theory</span>(</span>
+<span id="cb4-3"><a aria-label="3"></a>  <span class="at">path =</span> <span class="st">"SDT"</span>,</span>
+<span id="cb4-4"><a aria-label="4"></a>  <span class="at">title =</span> <span class="st">"Self-Determination Theory"</span>,</span>
+<span id="cb4-5"><a aria-label="5"></a>  <span class="at">theory_file =</span> <span class="fu">c</span>(<span class="st">"sdt.txt"</span>, <span class="st">"definitions.csv"</span>),</span>
+<span id="cb4-6"><a aria-label="6"></a>  <span class="at">remote_repo =</span> <span class="st">"self_determination_theory"</span>,</span>
+<span id="cb4-7"><a aria-label="7"></a>  <span class="at">add_license =</span> <span class="st">"cc0"</span></span>
+<span id="cb4-8"><a aria-label="8"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="readme-highlights-interoperability" class="slide level2">
@@ -675,71 +680,71 @@ needs -&gt; wellbeing
 <section id="interoperability" class="slide level2">
 <h2>Interoperability</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">library</span>(theorytools)</span>
-<span id="cb5-2"><a></a><span class="fu">download_theory</span>(https<span class="sc">:</span><span class="er">//</span>doi.org<span class="sc">/</span><span class="fl">10.5281</span><span class="sc">/</span>zenodo<span class="fl">.15648655</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a><span class="fu">library</span>(theorytools)</span>
+<span id="cb5-2"><a aria-label="2"></a><span class="fu">download_theory</span>(https<span class="sc">:</span><span class="er">//</span>doi.org<span class="sc">/</span><span class="fl">10.5281</span><span class="sc">/</span>zenodo<span class="fl">.15648655</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="interoperability-plotting" class="slide level2">
 <h2>Interoperability: Plotting</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>tidySEM<span class="sc">::</span><span class="fu">graph_sem</span>(SDT)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>tidySEM<span class="sc">::</span><span class="fu">graph_sem</span>(SDT)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 <img data-src="presentation_-_FGT_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
 <section id="interoperability-control-variables" class="slide level2">
 <h2>Interoperability: Control Variables</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="co"># Select covariates for causal inference</span></span>
-<span id="cb7-2"><a></a><span class="fu">library</span>(dagitty)</span>
-<span id="cb7-3"><a></a><span class="fu">adjustmentSets</span>(SDT,</span>
-<span id="cb7-4"><a></a>               <span class="at">exposure=</span><span class="st">"intrinsic_motivation"</span>,</span>
-<span id="cb7-5"><a></a>               <span class="at">outcome=</span><span class="st">"wellbeing"</span>)</span>
-<span id="cb7-6"><a></a><span class="co">#&gt; { needs }</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="co"># Select covariates for causal inference</span></span>
+<span id="cb7-2"><a aria-label="2"></a><span class="fu">library</span>(dagitty)</span>
+<span id="cb7-3"><a aria-label="3"></a><span class="fu">adjustmentSets</span>(SDT,</span>
+<span id="cb7-4"><a aria-label="4"></a>               <span class="at">exposure=</span><span class="st">"intrinsic_motivation"</span>,</span>
+<span id="cb7-5"><a aria-label="5"></a>               <span class="at">outcome=</span><span class="st">"wellbeing"</span>)</span>
+<span id="cb7-6"><a aria-label="6"></a><span class="co">#&gt; { needs }</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="interoperability-simulate-data" class="slide level2">
 <h2>Interoperability: Simulate Data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="co"># Simulate data</span></span>
-<span id="cb8-2"><a></a><span class="fu">simulate_data</span>(SDT, <span class="at">n =</span> <span class="dv">497</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a><span class="co"># Simulate data</span></span>
+<span id="cb8-2"><a aria-label="2"></a><span class="fu">simulate_data</span>(SDT, <span class="at">n =</span> <span class="dv">497</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>  external_event healthy_development integration intrinsic_motivation
-1           0.72                1.58       -0.48                -0.36
-2           0.18               -0.45       -0.46                 1.21
-3           0.79                1.87       -0.86                -0.60
-4          -0.67               -0.61       -0.03                 0.08
-5           0.72                1.52       -0.44                 1.72
+1           0.68               -1.11       -1.42                -1.36
+2          -1.73                0.09       -0.56                -0.69
+3           0.88                0.18       -0.01                -0.62
+4          -0.15                0.57       -0.18                 1.46
+5          -0.54                0.31       -0.88                 0.31
   locus_of_causality needs wellbeing
-1               0.42 -0.61     -0.30
-2               1.57  0.17     -0.64
-3               0.31  0.27     -0.15
-4              -1.10  0.54      0.35
-5               1.29  2.30     -3.96</code></pre>
+1              -1.43 -0.35     -1.19
+2               1.62 -1.04      0.83
+3              -0.48  0.50      0.30
+4               0.84  0.75     -0.06
+5               1.59 -0.39     -0.25</code></pre>
 </div>
 </div>
 </section>
 <section id="interoperability-power-analysis" class="slide level2">
 <h2>Interoperability: Power Analysis</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>sdt_coef <span class="ot">&lt;-</span> <span class="fu">dagitty</span>(<span class="st">'dag {</span></span>
-<span id="cb10-2"><a></a><span class="st">intrinsic_motivation -&gt; wellbeing [beta=.4]</span></span>
-<span id="cb10-3"><a></a><span class="st">needs -&gt; wellbeing [beta=.2]</span></span>
-<span id="cb10-4"><a></a><span class="st">}'</span>)</span>
-<span id="cb10-5"><a></a></span>
-<span id="cb10-6"><a></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb10-7"><a></a><span class="fu">prop.table</span>(</span>
-<span id="cb10-8"><a></a><span class="fu">table</span>(</span>
-<span id="cb10-9"><a></a><span class="fu">replicate</span>(</span>
-<span id="cb10-10"><a></a>  <span class="at">n =</span> <span class="dv">100</span>,</span>
-<span id="cb10-11"><a></a>  {</span>
-<span id="cb10-12"><a></a>    df_sim <span class="ot">&lt;-</span> <span class="fu">simulate_data</span>(sdt_coef, <span class="at">n =</span> <span class="dv">200</span>)</span>
-<span id="cb10-13"><a></a>    <span class="fu">summary</span>(<span class="fu">lm</span>(wellbeing <span class="sc">~</span> ., df_sim))<span class="sc">$</span>coefficients[<span class="dv">2</span>, <span class="dv">4</span>] <span class="sc">&lt;</span> .<span class="dv">05</span></span>
-<span id="cb10-14"><a></a>  }</span>
-<span id="cb10-15"><a></a>)</span>
-<span id="cb10-16"><a></a>)</span>
-<span id="cb10-17"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a>sdt_coef <span class="ot">&lt;-</span> <span class="fu">dagitty</span>(<span class="st">'dag {</span></span>
+<span id="cb10-2"><a aria-label="2"></a><span class="st">intrinsic_motivation -&gt; wellbeing [beta=.4]</span></span>
+<span id="cb10-3"><a aria-label="3"></a><span class="st">needs -&gt; wellbeing [beta=.2]</span></span>
+<span id="cb10-4"><a aria-label="4"></a><span class="st">}'</span>)</span>
+<span id="cb10-5"><a aria-label="5"></a></span>
+<span id="cb10-6"><a aria-label="6"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb10-7"><a aria-label="7"></a><span class="fu">prop.table</span>(</span>
+<span id="cb10-8"><a aria-label="8"></a><span class="fu">table</span>(</span>
+<span id="cb10-9"><a aria-label="9"></a><span class="fu">replicate</span>(</span>
+<span id="cb10-10"><a aria-label="10"></a>  <span class="at">n =</span> <span class="dv">100</span>,</span>
+<span id="cb10-11"><a aria-label="11"></a>  {</span>
+<span id="cb10-12"><a aria-label="12"></a>    df_sim <span class="ot">&lt;-</span> <span class="fu">simulate_data</span>(sdt_coef, <span class="at">n =</span> <span class="dv">200</span>)</span>
+<span id="cb10-13"><a aria-label="13"></a>    <span class="fu">summary</span>(<span class="fu">lm</span>(wellbeing <span class="sc">~</span> ., df_sim))<span class="sc">$</span>coefficients[<span class="dv">2</span>, <span class="dv">4</span>] <span class="sc">&lt;</span> .<span class="dv">05</span></span>
+<span id="cb10-14"><a aria-label="14"></a>  }</span>
+<span id="cb10-15"><a aria-label="15"></a>)</span>
+<span id="cb10-16"><a aria-label="16"></a>)</span>
+<span id="cb10-17"><a aria-label="17"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 FALSE  TRUE 
@@ -774,15 +779,15 @@ FALSE  TRUE
 </div></div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-deciSelfDeterminationTheory2012" class="csl-entry" role="listitem">
-Deci, Edward L., and Richard M. Ryan. 2012. <span>“Self-<span>Determination Theory</span>.”</span> In <em>Handbook of <span>Theories</span> of <span>Social Psychology</span>: <span>Volume</span> 1</em>, edited by Paul A. M. Van Lange, Arie W.Kruglanski, and E. ToryHiggins, 416–37. SAGE Publications Ltd. <a href="https://doi.org/10.4135/9781446249215">https://doi.org/10.4135/9781446249215</a>.
+Deci, Edward L., and Richard M. Ryan. 2012. <span>“Self-<span>Determination Theory</span>.”</span> In <em>Handbook of <span>Theories</span> of <span>Social Psychology</span>: <span>Volume</span> 1</em>, edited by Paul A. M. Van Lange, Arie W.Kruglanski, and E. ToryHiggins. SAGE Publications Ltd. <a href="https://doi.org/10.4135/9781446249215">https://doi.org/10.4135/9781446249215</a>.
 </div>
 <div id="ref-kuhbergerPublicationBiasPsychology2014" class="csl-entry" role="listitem">
 Kühberger, Anton, Astrid Fritz, and Thomas Scherndl. 2014. <span>“Publication <span>Bias</span> in <span>Psychology</span>: <span>A Diagnosis Based</span> on the <span>Correlation</span> Between <span>Effect Size</span> and <span>Sample Size</span>.”</span> <em>PLoS ONE</em> 9 (9): e105825. <a href="https://doi.org/10.1371/journal.pone.0105825">https://doi.org/10.1371/journal.pone.0105825</a>.
 </div>
 <div id="ref-mcphetresDecadeTheoryReflected2021" class="csl-entry" role="listitem">
-McPhetres, Jonathon, Nihan Albayrak-Aydemir, Ana Barbosa Mendes, Elvina C. Chow, Patricio Gonzalez-Marquez, Erin Loukras, Annika Maus, et al. 2021. <span>“A Decade of Theory as Reflected in <span>Psychological Science</span> (2009–2019).”</span> <em>PLOS ONE</em> 16 (3): e0247986. <a href="https://doi.org/10.1371/journal.pone.0247986">https://doi.org/10.1371/journal.pone.0247986</a>.
+McPhetres, Jonathon, Nihan Albayrak-Aydemir, Ana Barbosa Mendes, et al. 2021. <span>“A Decade of Theory as Reflected in <span>Psychological Science</span> (2009–2019).”</span> <em>PLOS ONE</em> 16 (3): e0247986. <a href="https://doi.org/10.1371/journal.pone.0247986">https://doi.org/10.1371/journal.pone.0247986</a>.
 </div>
 <div id="ref-meehlTheoreticalRisksTabular1978" class="csl-entry" role="listitem">
 Meehl, Paul E. 1978. <span>“Theoretical <span>Risks</span> and <span>Tabular Asterisks</span>: <span>Sir Karl</span>, <span>Sir Ronald</span>, and the <span>Slow Progress</span> of <span>Soft Psychology</span>.”</span> <em>Journal of Consulting &amp; Clinical Psychology</em> 46 (4): 806–34.
@@ -797,7 +802,7 @@ Robinaugh, Donald J., Jonas M. B. Haslbeck, Oisín Ryan, Eiko I. Fried, and Lour
 Scheel, Anne M. 2022. <span>“Why Most Psychological Research Findings Are Not Even Wrong.”</span> <em>Infant and Child Development</em> 31 (1): e2295. <a href="https://doi.org/10.1002/icd.2295">https://doi.org/10.1002/icd.2295</a>.
 </div>
 <div id="ref-vanlangeHandbookTheoriesSocial2012" class="csl-entry" role="listitem">
-Van Lange, Paul, Arie Kruglanski, and E. Higgins. 2012. <em>Handbook of <span>Theories</span> of <span>Social Psychology</span>: <span>Volume</span> 1</em>. 1 Oliver’s Yard,&nbsp;55 City Road,&nbsp;London&nbsp;EC1Y 1SP&nbsp;United Kingdom: SAGE Publications Ltd. <a href="https://doi.org/10.4135/9781446249215">https://doi.org/10.4135/9781446249215</a>.
+Van Lange, Paul, Arie Kruglanski, and E. Higgins. 2012. <em>Handbook of <span>Theories</span> of <span>Social Psychology</span>: <span>Volume</span> 1</em>. SAGE Publications Ltd. <a href="https://doi.org/10.4135/9781446249215">https://doi.org/10.4135/9781446249215</a>.
 </div>
 </div>
 </section></section>
@@ -992,7 +997,7 @@ Van Lange, Paul, Arie Kruglanski, and E. Higgins. 2012. <em>Handbook of <span>Th
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1019,80 +1024,42 @@ Van Lange, Paul, Arie Kruglanski, and E. Higgins. 2012. <em>Handbook of <span>Th
       });
     </script>
     
-
     <script>
-
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
       // slide changes (different for each slide format).
-
       (function () {
-
         // dispatch for htmlwidgets
-
         function fireSlideEnter() {
-
           const event = window.document.createEvent("Event");
-
           event.initEvent("slideenter", true, true);
-
           window.document.dispatchEvent(event);
-
         }
-
-    
 
         function fireSlideChanged(previousSlide, currentSlide) {
-
           fireSlideEnter();
 
-    
-
           // dispatch for shiny
-
           if (window.jQuery) {
-
             if (previousSlide) {
-
               window.jQuery(previousSlide).trigger("hidden");
-
             }
-
             if (currentSlide) {
-
               window.jQuery(currentSlide).trigger("shown");
-
             }
-
           }
-
         }
-
-    
 
         // hookup for slidy
-
         if (window.w3c_slidy) {
-
           window.w3c_slidy.add_observer(function (slide_num) {
-
             // slide_num starts at position 1
-
             fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
           });
-
         }
 
-    
-
       })();
-
     </script>
-
-    
 
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1142,13 +1109,14 @@ Van Lange, Paul, Arie Kruglanski, and E. Higgins. 2012. <em>Handbook of <span>Th
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
