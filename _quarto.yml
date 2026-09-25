@@ -6,6 +6,7 @@ project:
     - presentation.qmd
     - presentation_-_ESCOP_2.qmd
     - presentation_-_FGT.qmd
+    - presentation_-_TMC.qmd
   pre-render: minerva/decode.lua
   post-render:
     - cp -f _publish/README.md ./README.md

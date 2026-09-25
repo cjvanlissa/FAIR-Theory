@@ -27,3 +27,5 @@ README.commonmark.md
 
 *.mov
 *.mp4
+
+**/*.quarto_ipynb

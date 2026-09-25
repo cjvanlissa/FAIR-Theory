@@ -3,7 +3,7 @@ title: "To be FAIR: Theory Development Needs an Update"
 format: html
 toc: true
 keep-md: true
-date-modified: "2025-09-07"
+date-modified: "2026-09-18"
 keywords: ["FAIR", "theory", "software engineering", "open science"]
 appendix-cite-as: display
 ---
@@ -11,6 +11,7 @@ appendix-cite-as: display
 * [presentation](presentation.html)
 * [presentation_-_ESCOP_2](presentation_-_ESCOP_2.html)
 * [presentation_-_FGT](presentation_-_FGT.html)
+* [presentation_-_TMC](presentation_-_TMC.html)
 
 
 We introduce the concept of FAIR theories, reimagining theories as dynamic, evolving entities collaboratively developed and refined, thus contributing to a more robust and interconnected body of scientific knowledge.
